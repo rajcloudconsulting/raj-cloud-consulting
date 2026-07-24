@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajcloudconsulting.github.io/raj-cloud-consulting/sitemap.xml
