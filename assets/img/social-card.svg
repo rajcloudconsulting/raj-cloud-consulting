@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050914"/><stop offset="1" stop-color="#10244a"/></linearGradient><radialGradient id="r"><stop stop-color="#2ad4ff"/><stop offset="1" stop-color="#2ad4ff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<circle cx="920" cy="210" r="270" fill="url(#r)" opacity=".28"/>
+<circle cx="930" cy="220" r="120" fill="#3388ff"/>
+<text x="90" y="220" font-family="Arial" font-size="76" font-weight="700" fill="#fff">Raj Cloud Consulting</text>
+<text x="90" y="315" font-family="Arial" font-size="38" fill="#9fdfff">Microsoft Cloud • Security • Automation</text>
+<text x="90" y="420" font-family="Arial" font-size="27" fill="#dce7f8">Azure · Microsoft 365 · Intune · Defender · AVD · PowerShell</text>
+</svg>

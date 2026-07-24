@@ -1,0 +1,268 @@
+[
+  {
+    "category": "avd",
+    "file": "scripts/avd/Get-FSLogixHealth.ps1",
+    "title": "Report FSLogix configuration and service health",
+    "summary": "Reports FSLogix service state and selected non-secret configuration values useful for troubleshooting profile-container issues.",
+    "tags": [
+      "AVD",
+      "FSLogix",
+      "Health"
+    ]
+  },
+  {
+    "category": "avd",
+    "file": "scripts/avd/Test-AVDImageReadiness.ps1",
+    "title": "Test Azure Virtual Desktop image readiness",
+    "summary": "Performs local checks commonly used before sealing an AVD image, including pending restart, BitLocker, profile, Teams and FSLogix indicators.",
+    "tags": [
+      "AVD",
+      "Image",
+      "FSLogix",
+      "Teams"
+    ]
+  },
+  {
+    "category": "azure",
+    "file": "scripts/azure/Get-AzureResourceTagCompliance.ps1",
+    "title": "Audit Azure resource tag compliance",
+    "summary": "Uses the Az module to report resources missing one or more required governance tags. No tenant or subscription value is embedded.",
+    "tags": [
+      "Azure",
+      "Governance",
+      "Tags",
+      "Az PowerShell"
+    ]
+  },
+  {
+    "category": "azure",
+    "file": "scripts/azure/Get-AzureVMOperationalReport.ps1",
+    "title": "Create an Azure VM operational report",
+    "summary": "Produces a generic VM inventory including power state, size, operating system and identity type using the Az module.",
+    "tags": [
+      "Azure",
+      "VM",
+      "Inventory",
+      "Az PowerShell"
+    ]
+  },
+  {
+    "category": "azure",
+    "file": "scripts/azure/Test-KeyVaultPrivateConnectivity.ps1",
+    "title": "Test Azure Key Vault private connectivity",
+    "summary": "Checks DNS resolution and TCP 443 reachability for supplied Key Vault DNS names without exposing any real vault names.",
+    "tags": [
+      "Azure",
+      "Key Vault",
+      "Private Endpoint",
+      "Connectivity"
+    ]
+  },
+  {
+    "category": "endpoint",
+    "file": "scripts/endpoint/Get-IntuneManagementExtensionDiagnostics.ps1",
+    "title": "Collect Intune Management Extension diagnostics",
+    "summary": "Collects service status, recent relevant event log entries and log-file metadata without copying tenant-specific log contents.",
+    "tags": [
+      "Intune",
+      "Diagnostics",
+      "Endpoint"
+    ]
+  },
+  {
+    "category": "exchange",
+    "file": "scripts/exchange/Get-ExchangeConnectorAudit.ps1",
+    "title": "Audit Exchange Online connectors",
+    "summary": "Reports inbound and outbound connector configuration after the administrator connects to Exchange Online.",
+    "tags": [
+      "Exchange Online",
+      "M365",
+      "Audit"
+    ]
+  },
+  {
+    "category": "hardware",
+    "file": "scripts/hardware/Detect-HPBiosPasswordState.ps1",
+    "title": "Detect HP BIOS setup password state",
+    "summary": "Checks whether the HP Client Management Script Library is present and reports only whether a setup password is configured; it never reads or exposes the password.",
+    "tags": [
+      "HP",
+      "BIOS",
+      "Intune",
+      "Detection"
+    ]
+  },
+  {
+    "category": "intune",
+    "file": "scripts/intune/Detect-WindowsAndEdgeCopilot.ps1",
+    "title": "Detect Windows and Microsoft Edge Copilot configuration",
+    "summary": "Intune detection script that checks Windows Copilot and Microsoft Edge Copilot-related policy values.",
+    "tags": [
+      "Intune",
+      "Detection",
+      "Copilot",
+      "Edge"
+    ]
+  },
+  {
+    "category": "intune",
+    "file": "scripts/intune/Detect-PendingReboot.ps1",
+    "title": "Detect a pending Windows restart",
+    "summary": "Intune detection script for common component servicing, Windows Update and pending file rename restart indicators.",
+    "tags": [
+      "Intune",
+      "Windows",
+      "Detection"
+    ]
+  },
+  {
+    "category": "intune",
+    "file": "scripts/intune/Remediate-WindowsAndEdgeCopilot.ps1",
+    "title": "Disable Windows and Microsoft Edge Copilot",
+    "summary": "Removes supported Copilot packages where present and applies machine/user policy settings for Windows and Microsoft Edge.",
+    "tags": [
+      "Intune",
+      "Windows",
+      "Edge",
+      "Remediation"
+    ]
+  },
+  {
+    "category": "intune",
+    "file": "scripts/intune/Remediate-TimeZone.ps1",
+    "title": "Set the Windows time zone",
+    "summary": "Parameterised remediation for configuring a Windows time zone and validating the resulting setting.",
+    "tags": [
+      "Intune",
+      "Windows",
+      "Remediation"
+    ]
+  },
+  {
+    "category": "m365",
+    "file": "scripts/m365/Get-Microsoft365AppInventory.ps1",
+    "title": "Inventory Microsoft 365 application components",
+    "summary": "Inventories selected Microsoft 365, Teams, OneDrive and WebView2 installation information from standard local sources.",
+    "tags": [
+      "M365",
+      "Inventory",
+      "Teams",
+      "Office"
+    ]
+  },
+  {
+    "category": "m365",
+    "file": "scripts/m365/Test-TeamsOutlookAddin.ps1",
+    "title": "Test the Teams Outlook add-in",
+    "summary": "Checks common registry and installation indicators for the Microsoft Teams meeting add-in used by Outlook.",
+    "tags": [
+      "Teams",
+      "Outlook",
+      "M365",
+      "Detection"
+    ]
+  },
+  {
+    "category": "network",
+    "file": "scripts/network/Test-NessusWindowsPrerequisites.ps1",
+    "title": "Audit Windows authenticated-scan prerequisites",
+    "summary": "Audits services, firewall rules and administrative shares commonly required for authenticated Windows vulnerability scanning.",
+    "tags": [
+      "Security",
+      "Nessus",
+      "Network",
+      "Audit"
+    ]
+  },
+  {
+    "category": "network",
+    "file": "scripts/network/Test-TcpUdpConnectivity.ps1",
+    "title": "Test TCP and UDP connectivity",
+    "summary": "Parameterised connectivity test suitable for Event Hubs, syslog, proxy or other endpoint validation without embedded organisation-specific addresses.",
+    "tags": [
+      "Network",
+      "TCP",
+      "UDP",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "category": "network",
+    "file": "scripts/network/Test-PrivateEndpointDns.ps1",
+    "title": "Validate private endpoint DNS resolution",
+    "summary": "Resolves a supplied hostname, reports aliases and addresses, and optionally verifies that resolved addresses fall inside expected private CIDR prefixes.",
+    "tags": [
+      "Azure",
+      "DNS",
+      "Private Endpoint",
+      "Network"
+    ]
+  },
+  {
+    "category": "operations",
+    "file": "scripts/operations/Register-StartupShutdownTasks.ps1",
+    "title": "Register startup and shutdown wrapper tasks",
+    "summary": "Creates generic scheduled tasks for a startup script and an event-triggered shutdown wrapper. Paths are supplied as parameters.",
+    "tags": [
+      "Windows",
+      "Scheduled Task",
+      "Operations"
+    ]
+  },
+  {
+    "category": "operations",
+    "file": "scripts/operations/Get-SplunkForwarderHealth.ps1",
+    "title": "Report Splunk Universal Forwarder health",
+    "summary": "Reports service state, executable version where available and selected local configuration-file metadata without revealing configuration contents.",
+    "tags": [
+      "Splunk",
+      "Operations",
+      "Health"
+    ]
+  },
+  {
+    "category": "security",
+    "file": "scripts/security/Test-DefenderHealth.ps1",
+    "title": "Report Microsoft Defender endpoint health",
+    "summary": "Reports Defender service, antivirus status and selected preference values using built-in Defender cmdlets.",
+    "tags": [
+      "Defender",
+      "Security",
+      "Health"
+    ]
+  },
+  {
+    "category": "security",
+    "file": "scripts/security/Test-DefenderIOCImportCsv.ps1",
+    "title": "Validate a Defender indicator CSV",
+    "summary": "Validates indicator type, value, action and severity fields before a CSV is used in an administrative import workflow.",
+    "tags": [
+      "Defender",
+      "IOC",
+      "CSV",
+      "Validation"
+    ]
+  },
+  {
+    "category": "sharepoint",
+    "file": "scripts/sharepoint/Remove-SharePointFilesFromCsv-DryRun.ps1",
+    "title": "Plan SharePoint file deletion from CSV",
+    "summary": "Validates a CSV file list and defaults to dry-run behaviour. Actual deletion requires an explicit switch and an established PnP connection.",
+    "tags": [
+      "SharePoint",
+      "PnP PowerShell",
+      "Dry Run"
+    ]
+  },
+  {
+    "category": "teams",
+    "file": "scripts/teams/Get-TeamsComplianceRecordingAudit.ps1",
+    "title": "Audit Teams compliance recording configuration",
+    "summary": "Reports Teams compliance recording policies and paired application metadata after connecting to Microsoft Teams.",
+    "tags": [
+      "Teams",
+      "Compliance Recording",
+      "Audit"
+    ]
+  }
+]
