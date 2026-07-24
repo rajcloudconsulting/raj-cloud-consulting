@@ -1,667 +1,310 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Raj Cloud Consulting | Microsoft Cloud, Security & Automation</title>
-  <meta name="description" content="Microsoft Azure, Microsoft 365, Intune, Defender, AVD and PowerShell automation consulting.">
-  <meta name="theme-color" content="#050914">
+  <meta name="description" content="Microsoft Azure, Microsoft 365, endpoint security and PowerShell automation consulting by Raj Cloud Consulting.">
+  <meta name="author" content="Raj Cloud Consulting">
+  <meta name="theme-color" content="#031426">
   <meta property="og:title" content="Raj Cloud Consulting">
-  <meta property="og:description" content="Secure cloud platforms. Automated operations. Practical Microsoft engineering.">
+  <meta property="og:description" content="Design. Secure. Automate. Transform with Microsoft Cloud.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/social-card.svg">
+  <meta property="og:url" content="https://rajcloudconsulting.com/">
+  <link rel="canonical" href="https://rajcloudconsulting.com/">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="page-noise"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="#top" aria-label="Raj Cloud Consulting">
-        <span class="brand-orb">RC</span>
-        <span class="brand-text">
-          <strong>Raj Cloud</strong>
-          <small>Consulting</small>
-        </span>
-      </a>
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Raj Cloud Consulting home">
+      <span class="brand-orbit" aria-hidden="true"><span>RC</span></span>
+      <span class="brand-name"><b>Raj Cloud</b> Consulting</span>
+    </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span></span><span></span><span></span><i class="sr-only">Open navigation</i>
+    </button>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#experience">Experience</a>
-        <a href="#scripts">Scripts</a>
-        <a href="#contact">Contact</a>
-        <button class="portal-toggle" type="button" aria-controls="cloud-console" aria-expanded="false">Open Cloud Console</button>
-        <a class="nav-cta" href="https://github.com/rajcloudconsulting" target="_blank" rel="noopener">View GitHub</a>
-      </nav>
+    <nav class="site-menu" id="site-menu" aria-label="Primary navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#security">Security</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="button nav-cta" href="#contact">Start a conversation</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Microsoft cloud consulting</p>
+        <h1>Design. Secure. Automate.<br><span>Transform with Microsoft Cloud.</span></h1>
+        <p class="hero-copy">Practical consulting across Microsoft Azure, Microsoft 365, endpoint management, cloud security and automation.</p>
+        <div class="hero-tags" aria-label="Core expertise">
+          <span>Azure</span><span>Microsoft 365</span><span>Security</span><span>Automation</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Book a consultation</a>
+          <a class="button button-ghost" href="#services">Explore services</a>
+        </div>
+      </div>
+
+      <div class="cloud-scene reveal" id="cloud-scene" aria-label="Animated cloud architecture illustration">
+        <div class="scene-floor"></div>
+        <div class="core-cloud">
+          <span class="cloud-puff p1"></span>
+          <span class="cloud-puff p2"></span>
+          <span class="cloud-puff p3"></span>
+          <span class="cloud-base"></span>
+          <strong>Cloud</strong>
+        </div>
+
+        <div class="orbit orbit-a">
+          <div class="scene-node node-azure"><span>A</span><small>Azure</small></div>
+        </div>
+        <div class="orbit orbit-b">
+          <div class="scene-node node-m365"><span>M</span><small>Microsoft 365</small></div>
+        </div>
+        <div class="orbit orbit-c">
+          <div class="scene-node node-sec"><span>◆</span><small>Security</small></div>
+        </div>
+        <div class="orbit orbit-d">
+          <div class="scene-node node-auto"><span>&lt;/&gt;</span><small>Automation</small></div>
+        </div>
+
+        <svg class="connection-map" viewBox="0 0 640 520" role="img" aria-label="Cloud services connected to a central platform">
+          <defs>
+            <linearGradient id="lineGlow" x1="0" x2="1">
+              <stop offset="0" stop-color="#1591ff" stop-opacity=".15"/>
+              <stop offset=".5" stop-color="#67d7ff" stop-opacity=".95"/>
+              <stop offset="1" stop-color="#1591ff" stop-opacity=".15"/>
+            </linearGradient>
+          </defs>
+          <path d="M318 260 C190 180 145 155 90 122"/>
+          <path d="M320 260 C450 160 505 130 555 100"/>
+          <path d="M320 260 C448 345 520 390 575 420"/>
+          <path d="M320 260 C185 360 120 395 62 426"/>
+        </svg>
+
+        <div class="data-particle particle-1"></div>
+        <div class="data-particle particle-2"></div>
+        <div class="data-particle particle-3"></div>
+        <div class="data-particle particle-4"></div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-grid-lines" aria-hidden="true"></div>
-      <div class="hero-particles" aria-hidden="true"></div>
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <article><b>Cloud architecture</b><span>Secure and supportable design</span></article>
+      <article><b>Modern workplace</b><span>Identity, endpoint and collaboration</span></article>
+      <article><b>Security-first</b><span>Defence in depth and Zero Trust</span></article>
+      <article><b>Automation-led</b><span>Repeatable, efficient operations</span></article>
+    </div>
+  </section>
 
-      <div class="container hero-shell">
-        <div class="hero-copy reveal">
-          <div class="availability">
-            <span class="pulse-dot"></span>
-            Available for remote Microsoft cloud consulting
-          </div>
-
-          <p class="eyebrow">Azure • Microsoft 365 • Security • Automation</p>
-          <h1>
-            Engineering secure
-            <span class="gradient-text">Microsoft cloud platforms</span>
-            through automation.
-          </h1>
-          <p class="hero-lead">
-            Practical delivery across Azure, Microsoft 365, Intune, Defender,
-            Azure Virtual Desktop, networking and PowerShell—designed for
-            enterprise operations, governance and security.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button primary" href="#architecture">Explore architecture</a>
-            <a class="button secondary" href="#scripts">Browse public scripts</a>
-          </div>
-
-          <div class="hero-tech">
-            <span>Azure</span>
-            <span>Intune</span>
-            <span>Defender XDR</span>
-            <span>AVD</span>
-            <span>PowerShell</span>
-            <span>Microsoft 365</span>
-          </div>
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="heading-grid">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>Microsoft technology services built around real operational needs</h2>
         </div>
-
-        <div class="hero-visual reveal" aria-label="Animated Microsoft cloud architecture visual">
-          <div class="orbital-scene" id="orbital-scene">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="orbit orbit-three"></div>
-
-            <div class="core-sphere">
-              <div class="core-grid"></div>
-              <span>AZURE</span>
-            </div>
-
-            <button class="tech-node node-intune" type="button" data-detail="Endpoint management, compliance and application delivery">
-              <strong>Intune</strong><small>Endpoints</small>
-            </button>
-            <button class="tech-node node-defender" type="button" data-detail="Threat protection, attack surface reduction and endpoint security">
-              <strong>Defender</strong><small>Security</small>
-            </button>
-            <button class="tech-node node-avd" type="button" data-detail="Cloud desktops, FSLogix, image engineering and session optimisation">
-              <strong>AVD</strong><small>Cloud desktop</small>
-            </button>
-            <button class="tech-node node-m365" type="button" data-detail="Exchange, Teams, SharePoint and Microsoft 365 administration">
-              <strong>M365</strong><small>Productivity</small>
-            </button>
-            <button class="tech-node node-powershell" type="button" data-detail="Automation, remediation, reporting and repeatable operations">
-              <strong>PowerShell</strong><small>Automation</small>
-            </button>
-            <button class="tech-node node-keyvault" type="button" data-detail="Secrets management, private endpoints and secure application integration">
-              <strong>Key Vault</strong><small>Secrets</small>
-            </button>
-
-            <svg class="connection-layer" viewBox="0 0 700 650" role="img" aria-label="Animated connections between Microsoft cloud technologies">
-              <defs>
-                <linearGradient id="lineGradient" x1="0" x2="1">
-                  <stop offset="0%" stop-color="#2ad4ff" stop-opacity=".1"/>
-                  <stop offset="50%" stop-color="#2ad4ff"/>
-                  <stop offset="100%" stop-color="#8f6cff" stop-opacity=".2"/>
-                </linearGradient>
-              </defs>
-              <path d="M350 325 C220 240 170 170 105 120"/>
-              <path d="M350 325 C475 225 540 155 605 120"/>
-              <path d="M350 325 C160 330 105 355 70 400"/>
-              <path d="M350 325 C530 315 610 360 650 405"/>
-              <path d="M350 325 C250 470 190 510 135 545"/>
-              <path d="M350 325 C445 470 515 515 575 550"/>
-            </svg>
-          </div>
-
-          <div class="visual-detail glass-panel" id="visual-detail">
-            <span class="detail-label">Interactive architecture</span>
-            <strong>Hover or select a technology node</strong>
-            <p>Explore how each area connects to cloud operations and security engineering.</p>
-          </div>
-        </div>
+        <p>Focused support for design, implementation, troubleshooting, governance and continuous improvement.</p>
       </div>
 
-      <div class="container metric-strip reveal">
-        <div class="metric">
-          <strong data-count="23">0</strong>
-          <span>Public scripts</span>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="mini-cube azure-cube"><span>A</span></div>
+          <h3>Microsoft Azure</h3>
+          <p>Architecture, networking, governance, Azure Virtual Desktop, identity, private connectivity and platform operations.</p>
+          <ul><li>Landing zones</li><li>Networking and Private DNS</li><li>Azure Virtual Desktop</li></ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="mini-cube m365-cube"><span>M</span></div>
+          <h3>Microsoft 365</h3>
+          <p>Modern workplace administration across Microsoft Entra, Intune, Exchange Online, Teams and SharePoint.</p>
+          <ul><li>Identity and access</li><li>Endpoint management</li><li>Messaging and collaboration</li></ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="mini-cube sec-cube"><span>◇</span></div>
+          <h3>Cloud Security</h3>
+          <p>Security posture improvement using Microsoft Defender, Zero Trust principles and controlled operational processes.</p>
+          <ul><li>Defender and endpoint security</li><li>Conditional Access</li><li>Vulnerability management</li></ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="mini-cube auto-cube"><span>&lt;/&gt;</span></div>
+          <h3>Automation</h3>
+          <p>PowerShell, Azure Policy, Intune remediations and GitHub-based workflows that reduce repetitive manual effort.</p>
+          <ul><li>PowerShell automation</li><li>Policy and remediation</li><li>Operational tooling</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section architecture" id="architecture">
+    <div class="container">
+      <div class="heading-grid inverse">
+        <div>
+          <p class="eyebrow">Interactive architecture</p>
+          <h2>A connected Microsoft cloud operating model</h2>
         </div>
-        <div class="metric">
-          <strong data-count="15">0</strong>
-          <span>Technology areas</span>
+        <p>Select a capability to see how it supports a secure, manageable and automated environment.</p>
+      </div>
+
+      <div class="topology-layout">
+        <div class="topology" id="topology">
+          <button class="topology-node active" data-key="platform" style="--x:50%;--y:50%">
+            <span>Cloud Platform</span><small>Core</small>
+          </button>
+          <button class="topology-node" data-key="identity" style="--x:50%;--y:8%">
+            <span>Identity</span><small>Entra ID</small>
+          </button>
+          <button class="topology-node" data-key="endpoint" style="--x:88%;--y:30%">
+            <span>Endpoints</span><small>Intune</small>
+          </button>
+          <button class="topology-node" data-key="security" style="--x:82%;--y:78%">
+            <span>Security</span><small>Defender</small>
+          </button>
+          <button class="topology-node" data-key="automation" style="--x:18%;--y:78%">
+            <span>Automation</span><small>PowerShell</small>
+          </button>
+          <button class="topology-node" data-key="network" style="--x:12%;--y:30%">
+            <span>Network</span><small>Azure</small>
+          </button>
+          <svg viewBox="0 0 600 440" aria-hidden="true">
+            <line x1="300" y1="220" x2="300" y2="55"/>
+            <line x1="300" y1="220" x2="525" y2="132"/>
+            <line x1="300" y1="220" x2="492" y2="345"/>
+            <line x1="300" y1="220" x2="108" y2="345"/>
+            <line x1="300" y1="220" x2="72" y2="132"/>
+          </svg>
         </div>
-        <div class="metric">
-          <strong data-count="6">0</strong>
-          <span>Core Microsoft domains</span>
+
+        <aside class="topology-detail" aria-live="polite">
+          <span class="detail-kicker" id="detail-kicker">Core platform</span>
+          <h3 id="detail-title">Cloud Platform</h3>
+          <p id="detail-text">A governed Microsoft cloud foundation brings identity, networking, security, endpoint management and automation together.</p>
+          <ul id="detail-list">
+            <li>Clear operational ownership</li>
+            <li>Security and governance by design</li>
+            <li>Scalable service delivery</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light" id="security">
+    <div class="container security-layout">
+      <div class="security-visual reveal">
+        <div class="shield-3d">
+          <div class="shield-face"><span>✓</span></div>
+          <div class="shield-depth"></div>
         </div>
-        <div class="metric">
-          <strong data-count="100">0</strong>
-          <span>Security-first approach</span>
+        <div class="security-ring ring-one"></div>
+        <div class="security-ring ring-two"></div>
+        <span class="security-label label-id">Identity</span>
+        <span class="security-label label-data">Data</span>
+        <span class="security-label label-device">Devices</span>
+        <span class="security-label label-cloud">Cloud</span>
+      </div>
+      <div class="security-copy reveal">
+        <p class="eyebrow">Security and governance</p>
+        <h2>Security integrated into architecture and operations</h2>
+        <p>Security is strongest when identity, devices, applications, data and cloud infrastructure are managed as one connected system.</p>
+        <div class="security-list">
+          <article><b>Zero Trust</b><span>Verify explicitly and apply least privilege.</span></article>
+          <article><b>Defender ecosystem</b><span>Improve visibility and endpoint protection.</span></article>
+          <article><b>Governance</b><span>Use policies, standards and controlled change.</span></article>
+          <article><b>Operational resilience</b><span>Design for monitoring, recovery and support.</span></article>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <section class="section scripts" id="scripts">
+    <div class="container scripts-layout">
+      <div class="scripts-copy reveal">
+        <p class="eyebrow">Public script library</p>
+        <h2>Sanitised PowerShell examples for Microsoft administration</h2>
+        <p>Reusable public examples demonstrate practical approaches without exposing client names, tenant identifiers, internal systems or confidential data.</p>
+        <a class="button" href="https://github.com/rajcloudconsulting/raj-cloud-consulting/tree/main/scripts" target="_blank" rel="noopener">Browse scripts on GitHub</a>
+      </div>
+      <div class="terminal reveal">
+        <div class="terminal-head"><span></span><span></span><span></span><b>PowerShell</b></div>
+        <pre><code><i># Example: cloud readiness review</i>
+<span>$capabilities</span> = @(
+  <em>"Azure"</em>,
+  <em>"Microsoft 365"</em>,
+  <em>"Security"</em>,
+  <em>"Automation"</em>
+)
 
-    <section class="portal-section" id="cloud-console">
-      <div class="container">
-        <div class="portal-window reveal">
-          <div class="portal-topbar">
-            <div class="portal-title">
-              <span class="portal-logo">RC</span>
-              <div>
-                <strong>Raj Cloud Operations Portal</strong>
-                <small>Secure cloud • automation • operational visibility</small>
-              </div>
-            </div>
-            <div class="portal-actions">
-              <span class="portal-status"><i></i> All systems operational</span>
-              <button class="portal-close" type="button" aria-label="Close cloud console">×</button>
-            </div>
-          </div>
+<span>$capabilities</span> | ForEach-Object {
+  Write-Host <em>"Reviewing $_"</em>
+}</code></pre>
+      </div>
+    </div>
+  </section>
 
-          <div class="portal-layout">
-            <aside class="portal-sidebar" aria-label="Cloud portal navigation">
-              <button class="portal-nav active" type="button" data-panel="overview">Overview</button>
-              <button class="portal-nav" type="button" data-panel="security">Security</button>
-              <button class="portal-nav" type="button" data-panel="automation">Automation</button>
-              <button class="portal-nav" type="button" data-panel="endpoints">Endpoints</button>
-              <button class="portal-nav" type="button" data-panel="architecture">Architecture</button>
-            </aside>
-
-            <div class="portal-content">
-              <div class="portal-panel active" data-portal-panel="overview">
-                <div class="portal-heading">
-                  <div>
-                    <span class="detail-label">Overview</span>
-                    <h2>Cloud engineering command centre</h2>
-                  </div>
-                  <span class="last-refresh">Updated just now</span>
-                </div>
-
-                <div class="portal-metrics">
-                  <article><span>Public scripts</span><strong>23</strong><small>Sanitised and documented</small></article>
-                  <article><span>Core platforms</span><strong>6</strong><small>Azure to endpoint</small></article>
-                  <article><span>Security focus</span><strong>100%</strong><small>Built into every workflow</small></article>
-                  <article><span>Automation coverage</span><strong>High</strong><small>Repeatable operations</small></article>
-                </div>
-
-                <div class="portal-grid">
-                  <article class="portal-tile portal-architecture-tile">
-                    <div class="tile-heading"><strong>Live service topology</strong><span>Interactive</span></div>
-                    <div class="mini-topology">
-                      <span class="mini-node azure">Azure</span>
-                      <span class="mini-node intune">Intune</span>
-                      <span class="mini-node defender">Defender</span>
-                      <span class="mini-node m365">M365</span>
-                      <span class="mini-node avd">AVD</span>
-                      <svg viewBox="0 0 500 260" aria-hidden="true">
-                        <path d="M250 130 L100 60"/>
-                        <path d="M250 130 L400 60"/>
-                        <path d="M250 130 L100 205"/>
-                        <path d="M250 130 L400 205"/>
-                      </svg>
-                    </div>
-                  </article>
-
-                  <article class="portal-tile">
-                    <div class="tile-heading"><strong>Secure Score trend</strong><span class="trend-up">Improving</span></div>
-                    <div class="score-ring"><span>92%</span></div>
-                    <p>Example visual showing governance and security improvement focus.</p>
-                  </article>
-
-                  <article class="portal-tile">
-                    <div class="tile-heading"><strong>Recent automation</strong><span>Live</span></div>
-                    <div class="activity-feed">
-                      <div><i class="ok"></i><span>Endpoint health validation</span><time>Now</time></div>
-                      <div><i class="ok"></i><span>Private endpoint DNS test</span><time>2m</time></div>
-                      <div><i class="warn"></i><span>AVD image readiness review</span><time>8m</time></div>
-                      <div><i class="ok"></i><span>Azure tag compliance report</span><time>12m</time></div>
-                    </div>
-                  </article>
-
-                  <article class="portal-tile">
-                    <div class="tile-heading"><strong>Platform health</strong><span>Operational</span></div>
-                    <div class="health-list">
-                      <div><span>Azure</span><b>Healthy</b></div>
-                      <div><span>Microsoft 365</span><b>Healthy</b></div>
-                      <div><span>Defender</span><b>Healthy</b></div>
-                      <div><span>Intune</span><b>Healthy</b></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="portal-panel" data-portal-panel="security">
-                <div class="portal-heading"><div><span class="detail-label">Security</span><h2>Security operations view</h2></div></div>
-                <div class="portal-metrics">
-                  <article><span>Endpoint protection</span><strong>Active</strong><small>Defender health visibility</small></article>
-                  <article><span>IOC workflows</span><strong>Ready</strong><small>CSV validation patterns</small></article>
-                  <article><span>Hardening</span><strong>Tracked</strong><small>Policy-based remediation</small></article>
-                </div>
-                <div class="soc-radar">
-                  <div class="radar-circle"><span></span><span></span><span></span><i></i></div>
-                  <div>
-                    <h3>Security-first engineering</h3>
-                    <p>Endpoint protection, attack-surface reduction, indicator validation and cloud governance are presented as an integrated operational capability.</p>
-                    <a class="text-link" href="scripts/security/Test-DefenderHealth.ps1">Open Defender health script →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="portal-panel" data-portal-panel="automation">
-                <div class="portal-heading"><div><span class="detail-label">Automation</span><h2>PowerShell automation workspace</h2></div></div>
-                <div class="automation-console">
-                  <div class="automation-code">
-                    <span>PS C:\Cloud&gt;</span> Invoke-RajCloudAutomation<br>
-                    <em>✓ Connected to Azure context</em><br>
-                    <em>✓ Endpoint compliance checked</em><br>
-                    <em>✓ Security report generated</em><br>
-                    <em>✓ Operational validation complete</em>
-                  </div>
-                  <div class="automation-summary">
-                    <strong>Repeatable operations</strong>
-                    <p>Scripts are structured to support safe testing, clear outputs, validation and controlled production use.</p>
-                    <a class="button primary" href="docs/SCRIPT-CATALOGUE.md">Browse automation catalogue</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="portal-panel" data-portal-panel="endpoints">
-                <div class="portal-heading"><div><span class="detail-label">Endpoints</span><h2>Modern endpoint management</h2></div></div>
-                <div class="endpoint-board">
-                  <article><span>Windows 11</span><strong>Managed</strong><small>Configuration and remediation</small></article>
-                  <article><span>Intune</span><strong>Compliant</strong><small>Policy and application delivery</small></article>
-                  <article><span>AVD</span><strong>Optimised</strong><small>FSLogix and image readiness</small></article>
-                  <article><span>Defender</span><strong>Protected</strong><small>Health and security controls</small></article>
-                </div>
-              </div>
-
-              <div class="portal-panel" data-portal-panel="architecture">
-                <div class="portal-heading"><div><span class="detail-label">Architecture</span><h2>Connected Microsoft cloud platform</h2></div></div>
-                <img class="portal-cover-image" src="assets/img/raj-cloud-brand-cover.png" alt="Raj Cloud Consulting cloud security and automation cover artwork">
-              </div>
-            </div>
-          </div>
+  <section class="section light" id="about">
+    <div class="container about-layout">
+      <div class="about-photo reveal">
+        <img src="assets/img/rajesh-arumugam.jpg" alt="Rajesh Arumugam, founder of Raj Cloud Consulting">
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">About the founder</p>
+        <h2>Rajesh Arumugam</h2>
+        <h3>Microsoft Cloud Consultant</h3>
+        <p>I help organisations design, secure and improve Microsoft cloud environments with a practical focus on architecture, administration and automation.</p>
+        <p>My work covers Microsoft Azure, Microsoft 365, endpoint management, Azure Virtual Desktop, Microsoft Defender, Exchange, Teams and PowerShell automation.</p>
+        <div class="skill-pills">
+          <span>Azure</span><span>Microsoft 365</span><span>Intune</span><span>Defender</span><span>AVD</span><span>PowerShell</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Consulting services</p>
-            <h2>Enterprise-focused Microsoft engineering</h2>
-          </div>
-          <p>
-            Architecture, troubleshooting, automation and security improvement
-            delivered with clear documentation and operational handover.
-          </p>
-        </div>
-
-        <div class="service-grid">
-          <article class="glass-card tilt-card reveal">
-            <div class="card-icon cloud-icon">☁</div>
-            <span class="card-index">01</span>
-            <h3>Azure & Microsoft 365</h3>
-            <p>Cloud governance, identity, administration, secure connectivity and operational improvement.</p>
-            <ul>
-              <li>Azure RBAC and governance</li>
-              <li>Microsoft 365 administration</li>
-              <li>Private endpoint and DNS design</li>
-            </ul>
-          </article>
-
-          <article class="glass-card tilt-card reveal">
-            <div class="card-icon">▦</div>
-            <span class="card-index">02</span>
-            <h3>Intune & Windows</h3>
-            <p>Modern endpoint management, Windows 11 deployment and policy-driven configuration.</p>
-            <ul>
-              <li>Detection and remediation</li>
-              <li>Application deployment</li>
-              <li>Compliance and hardening</li>
-            </ul>
-          </article>
-
-          <article class="glass-card tilt-card reveal">
-            <div class="card-icon">◇</div>
-            <span class="card-index">03</span>
-            <h3>Security & Defender</h3>
-            <p>Endpoint protection, security posture review, attack-surface reduction and investigation support.</p>
-            <ul>
-              <li>Defender health and onboarding</li>
-              <li>IOC validation workflows</li>
-              <li>Security baseline assessment</li>
-            </ul>
-          </article>
-
-          <article class="glass-card tilt-card reveal">
-            <div class="card-icon">&gt;_</div>
-            <span class="card-index">04</span>
-            <h3>PowerShell Automation</h3>
-            <p>Reusable operational tooling that reduces repetitive work and improves consistency.</p>
-            <ul>
-              <li>Reporting and health checks</li>
-              <li>Bulk administration</li>
-              <li>Safe remediation tooling</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section architecture-section" id="architecture">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Interactive architecture</p>
-            <h2>From endpoint to cloud security</h2>
-          </div>
-          <p>Select a component to view the engineering focus and related public tooling.</p>
-        </div>
-
-        <div class="architecture-shell reveal">
-          <div class="architecture-canvas">
-            <svg viewBox="0 0 980 540" role="img" aria-label="Microsoft cloud architecture diagram">
-              <defs>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="4" result="blur"/>
-                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-                <linearGradient id="archLine" x1="0" x2="1">
-                  <stop offset="0" stop-color="#2ad4ff"/>
-                  <stop offset="1" stop-color="#8f6cff"/>
-                </linearGradient>
-              </defs>
-
-              <g class="arch-lines">
-                <path d="M155 145 C270 145 305 220 420 220"/>
-                <path d="M155 380 C270 380 305 295 420 295"/>
-                <path d="M560 255 C680 255 690 145 815 145"/>
-                <path d="M560 255 C680 255 700 385 815 385"/>
-                <path d="M490 320 L490 440"/>
-              </g>
-
-              <g class="packet packet-a"><circle r="6"/></g>
-              <g class="packet packet-b"><circle r="6"/></g>
-              <g class="packet packet-c"><circle r="6"/></g>
-
-              <g class="arch-node selected" data-arch="intune" transform="translate(65 95)">
-                <rect width="190" height="100" rx="22"/>
-                <text x="24" y="42" class="node-title">Intune</text>
-                <text x="24" y="70" class="node-sub">Endpoints & compliance</text>
-              </g>
-
-              <g class="arch-node" data-arch="avd" transform="translate(65 330)">
-                <rect width="190" height="100" rx="22"/>
-                <text x="24" y="42" class="node-title">Azure Virtual Desktop</text>
-                <text x="24" y="70" class="node-sub">Images, FSLogix, sessions</text>
-              </g>
-
-              <g class="arch-node central" data-arch="azure" transform="translate(390 205)">
-                <rect width="200" height="120" rx="28"/>
-                <text x="100" y="48" text-anchor="middle" class="node-title">Microsoft Azure</text>
-                <text x="100" y="80" text-anchor="middle" class="node-sub">Identity • Network • Governance</text>
-              </g>
-
-              <g class="arch-node" data-arch="defender" transform="translate(725 95)">
-                <rect width="190" height="100" rx="22"/>
-                <text x="24" y="42" class="node-title">Defender XDR</text>
-                <text x="24" y="70" class="node-sub">Detection & protection</text>
-              </g>
-
-              <g class="arch-node" data-arch="m365" transform="translate(725 335)">
-                <rect width="190" height="100" rx="22"/>
-                <text x="24" y="42" class="node-title">Microsoft 365</text>
-                <text x="24" y="70" class="node-sub">Exchange • Teams • SharePoint</text>
-              </g>
-
-              <g class="arch-node automation" data-arch="automation" transform="translate(390 420)">
-                <rect width="200" height="82" rx="22"/>
-                <text x="100" y="34" text-anchor="middle" class="node-title">PowerShell Automation</text>
-                <text x="100" y="59" text-anchor="middle" class="node-sub">Remediation • Reporting • APIs</text>
-              </g>
-            </svg>
-          </div>
-
-          <aside class="architecture-info glass-panel">
-            <span class="detail-label">Selected capability</span>
-            <h3 id="arch-title">Microsoft Intune</h3>
-            <p id="arch-description">
-              Endpoint configuration, application delivery, compliance,
-              Windows remediation and modern management.
-            </p>
-            <div id="arch-tags" class="tag-row">
-              <span>Detection</span><span>Remediation</span><span>Windows 11</span>
-            </div>
-            <a id="arch-link" class="text-link" href="docs/SCRIPT-CATALOGUE.md">View related scripts →</a>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section terminal-section" id="experience">
-      <div class="container terminal-grid">
-        <div class="terminal-copy reveal">
-          <p class="eyebrow">Operational experience</p>
-          <h2>Practical engineering, not just theory.</h2>
-          <p>
-            The portfolio demonstrates real-world troubleshooting patterns,
-            repeatable automation, security-first decisions and documentation
-            suitable for enterprise environments.
-          </p>
-
-          <div class="experience-list">
-            <div><span>01</span><p><strong>Cloud operations</strong>Azure governance, private connectivity, VM reporting and Key Vault validation.</p></div>
-            <div><span>02</span><p><strong>Endpoint engineering</strong>Intune remediations, Windows configuration, application and health checks.</p></div>
-            <div><span>03</span><p><strong>Security operations</strong>Defender, IOC workflows, authenticated scan readiness and SIEM support.</p></div>
-            <div><span>04</span><p><strong>Automation</strong>PowerShell tooling for repeatable administration and controlled change.</p></div>
-          </div>
-        </div>
-
-        <div class="terminal-window reveal">
-          <div class="terminal-bar">
-            <div class="terminal-dots"><span></span><span></span><span></span></div>
-            <div>PowerShell — Raj Cloud Consulting</div>
-          </div>
-          <div class="terminal-body" id="terminal-output" aria-live="polite">
-            <div><span class="prompt">PS C:\Cloud&gt;</span> <span class="typed-command"></span><span class="terminal-cursor">▋</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dashboard-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Technical dashboard</p>
-            <h2>Portfolio coverage at a glance</h2>
-          </div>
-        </div>
-
-        <div class="dashboard-grid">
-          <article class="dashboard-card reveal">
-            <span>Cloud engineering</span>
-            <strong>Azure</strong>
-            <div class="progress"><i style="--value:94%"></i></div>
-            <small>Governance, networking, identity and compute</small>
-          </article>
-          <article class="dashboard-card reveal">
-            <span>Endpoint management</span>
-            <strong>Intune</strong>
-            <div class="progress"><i style="--value:96%"></i></div>
-            <small>Compliance, remediation and Windows deployment</small>
-          </article>
-          <article class="dashboard-card reveal">
-            <span>Security engineering</span>
-            <strong>Defender</strong>
-            <div class="progress"><i style="--value:91%"></i></div>
-            <small>Protection, health, indicators and hardening</small>
-          </article>
-          <article class="dashboard-card reveal">
-            <span>Automation</span>
-            <strong>PowerShell</strong>
-            <div class="progress"><i style="--value:97%"></i></div>
-            <small>Reporting, deployment and operational tooling</small>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section scripts-section" id="scripts">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Public script library</p>
-            <h2>Reusable technical tools</h2>
-          </div>
-          <p>Sanitised samples covering Intune, Azure, AVD, Microsoft 365, security, networking and operations.</p>
-        </div>
-
-        <div class="script-controls reveal">
-          <div class="filter-row">
-            <button class="filter-button active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="intune">Intune</button>
-            <button class="filter-button" type="button" data-filter="azure">Azure</button>
-            <button class="filter-button" type="button" data-filter="security">Security</button>
-            <button class="filter-button" type="button" data-filter="network">Network</button>
-          </div>
-          <a class="text-link" href="docs/SCRIPT-CATALOGUE.md">Open full catalogue →</a>
-        </div>
-
-        <div class="script-grid">
-          <article class="script-card reveal" data-category="intune">
-            <div class="script-top"><span class="script-badge">Intune</span><span>.ps1</span></div>
-            <h3>Windows & Edge Copilot Controls</h3>
-            <p>Detection and remediation patterns for Copilot-related Windows and Edge policy settings.</p>
-            <div class="code-preview"><span>Set-RegistryDWORD</span><br>TurnOffWindowsCopilot = 1</div>
-            <a href="scripts/intune/Remediate-WindowsAndEdgeCopilot.ps1" download>Download script →</a>
-          </article>
-
-          <article class="script-card reveal" data-category="azure">
-            <div class="script-top"><span class="script-badge">Azure</span><span>.ps1</span></div>
-            <h3>Azure Resource Tag Compliance</h3>
-            <p>Reports Azure resources missing required governance tags.</p>
-            <div class="code-preview"><span>Get-AzResource</span><br>MissingTags = Owner, Environment</div>
-            <a href="scripts/azure/Get-AzureResourceTagCompliance.ps1" download>Download script →</a>
-          </article>
-
-          <article class="script-card reveal" data-category="security">
-            <div class="script-top"><span class="script-badge">Security</span><span>.ps1</span></div>
-            <h3>Defender Health Report</h3>
-            <p>Reports antivirus, real-time protection, cloud protection and signature status.</p>
-            <div class="code-preview"><span>Get-MpComputerStatus</span><br>RealTimeProtectionEnabled = True</div>
-            <a href="scripts/security/Test-DefenderHealth.ps1" download>Download script →</a>
-          </article>
-
-          <article class="script-card reveal" data-category="network">
-            <div class="script-top"><span class="script-badge">Network</span><span>.ps1</span></div>
-            <h3>Private Endpoint DNS Test</h3>
-            <p>Validates aliases, addresses and expected private resolution behaviour.</p>
-            <div class="code-preview"><span>Resolve-DnsName</span><br>PrivateEndpoint = True</div>
-            <a href="scripts/network/Test-PrivateEndpointDns.ps1" download>Download script →</a>
-          </article>
-
-          <article class="script-card reveal" data-category="intune">
-            <div class="script-top"><span class="script-badge">AVD</span><span>.ps1</span></div>
-            <h3>AVD Image Readiness</h3>
-            <p>Checks Teams, FSLogix, pending restart and image preparation indicators.</p>
-            <div class="code-preview"><span>Test-AVDImageReadiness</span><br>Status = Ready</div>
-            <a href="scripts/avd/Test-AVDImageReadiness.ps1" download>Download script →</a>
-          </article>
-
-          <article class="script-card featured-script reveal" data-category="all">
-            <div class="featured-orb"></div>
-            <span class="script-badge">Full library</span>
-            <h3>Explore all 23 public scripts</h3>
-            <p>Browse the complete sanitised catalogue with documentation and category links.</p>
-            <a class="button primary" href="docs/SCRIPT-CATALOGUE.md">View catalogue</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section brand-showcase">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">Brand identity</p>
-            <h2>Secure cloud. Smart automation. Real impact.</h2>
-          </div>
-          <p>A dedicated visual identity designed for a modern Microsoft cloud and security consultancy.</p>
-        </div>
-        <div class="brand-art-card reveal">
-          <img src="assets/img/raj-cloud-brand-cover.png" alt="Raj Cloud Consulting logo and cloud security cover design">
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-shell reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">Start a conversation</p>
-          <h2>Need help with your Microsoft environment?</h2>
-          <p>
-            Available for architecture reviews, troubleshooting, PowerShell
-            automation, endpoint management and cloud security improvement.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:rajcloudconsulting@gmail.com">rajcloudconsulting@gmail.com</a>
-            <a href="https://github.com/rajcloudconsulting" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/rajcloudconsulting" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-
-        <div class="contact-card glass-panel">
-          <span class="detail-label">Consulting availability</span>
-          <h3>Remote delivery • UK based</h3>
-          <p>Microsoft cloud engineering, security, automation and operational support.</p>
-          <a class="button primary" href="mailto:rajcloudconsulting@gmail.com?subject=Raj%20Cloud%20Consulting%20Enquiry">Discuss a project</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-shell">
+  <section class="section contact" id="contact">
+    <div class="container contact-panel reveal">
       <div>
-        <a class="brand" href="#top">
-          <span class="brand-orb">RC</span>
-          <span class="brand-text"><strong>Raj Cloud</strong><small>Consulting</small></span>
-        </a>
-        <p>Microsoft cloud, security and automation engineering.</p>
+        <p class="eyebrow">Contact</p>
+        <h2>Discuss your Microsoft cloud requirement</h2>
+        <p>Send a brief description of the environment, objective and expected timeframe.</p>
       </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#scripts">Scripts</a>
-        <a href="docs/SECURITY.md">Security standard</a>
+      <div class="contact-actions">
+        <a class="button button-light" href="mailto:rajcloudconsulting@gmail.com?subject=Consulting%20enquiry">Email Raj Cloud Consulting</a>
+        <span>rajcloudconsulting@gmail.com</span>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Raj Cloud Consulting</span>
-      <span>Built for GitHub Pages</span>
-    </div>
-  </footer>
+  </section>
+</main>
 
-  <script src="assets/js/main.js"></script>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="#top"><span class="brand-orbit"><span>RC</span></span><span class="brand-name"><b>Raj Cloud</b> Consulting</span></a>
+      <p>Microsoft cloud, security and automation consulting.</p>
+    </div>
+    <div><b>Services</b><a href="#services">Microsoft Azure</a><a href="#services">Microsoft 365</a><a href="#security">Security</a></div>
+    <div><b>Connect</b><a href="https://github.com/rajcloudconsulting" target="_blank" rel="noopener">GitHub</a><a href="mailto:rajcloudconsulting@gmail.com">Email</a></div>
+  </div>
+  <div class="container footer-bottom">© <span id="year"></span> Raj Cloud Consulting. All rights reserved.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

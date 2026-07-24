@@ -1,220 +1,65 @@
-const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.nav-links');
-
-menuButton?.addEventListener('click', () => {
-  const open = navigation.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
+const menuButton=document.querySelector(".menu-button");
+const menu=document.querySelector(".site-menu");
+menuButton?.addEventListener("click",()=>{
+  const open=menu.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded",String(open));
 });
+document.querySelectorAll(".site-menu a").forEach(a=>a.addEventListener("click",()=>{
+  menu.classList.remove("open");
+  menuButton?.setAttribute("aria-expanded","false");
+}));
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navigation.classList.remove('open');
-    menuButton?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const glow = document.querySelector('.cursor-glow');
-window.addEventListener('pointermove', event => {
-  if (!glow) return;
-  glow.style.left = `${event.clientX}px`;
-  glow.style.top = `${event.clientY}px`;
-});
-
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
 
-document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
-
-const countObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    const element = entry.target;
-    const target = Number(element.dataset.count || 0);
-    const suffix = target === 100 ? '%' : '+';
-    const duration = 1200;
-    const start = performance.now();
-
-    const animate = now => {
-      const progress = Math.min((now - start) / duration, 1);
-      element.textContent = `${Math.round(target * progress)}${suffix}`;
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
-    countObserver.unobserve(element);
-  });
-}, { threshold: 0.6 });
-
-document.querySelectorAll('[data-count]').forEach(element => countObserver.observe(element));
-
-document.querySelectorAll('.tech-node').forEach(node => {
-  const activate = () => {
-    document.querySelectorAll('.tech-node').forEach(item => item.classList.remove('active'));
-    node.classList.add('active');
-
-    const detail = document.getElementById('visual-detail');
-    detail.innerHTML = `
-      <span class="detail-label">${node.querySelector('strong').textContent}</span>
-      <strong>${node.querySelector('small').textContent}</strong>
-      <p>${node.dataset.detail}</p>
-    `;
-  };
-
-  node.addEventListener('mouseenter', activate);
-  node.addEventListener('focus', activate);
-  node.addEventListener('click', activate);
-});
-
-document.querySelectorAll('.tilt-card').forEach(card => {
-  card.addEventListener('pointermove', event => {
-    const rect = card.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(800px) rotateY(${x * 7}deg) rotateX(${y * -7}deg) translateY(-4px)`;
-  });
-
-  card.addEventListener('pointerleave', () => {
-    card.style.transform = '';
-  });
-});
-
-const architectureData = {
-  intune: {
-    title: 'Microsoft Intune',
-    description: 'Endpoint configuration, application delivery, compliance, Windows remediation and modern management.',
-    tags: ['Detection', 'Remediation', 'Windows 11']
-  },
-  avd: {
-    title: 'Azure Virtual Desktop',
-    description: 'Golden image readiness, FSLogix, Teams optimisation, session policy and cloud-desktop troubleshooting.',
-    tags: ['AVD', 'FSLogix', 'Teams']
-  },
-  azure: {
-    title: 'Microsoft Azure',
-    description: 'Governance, identity, networking, private endpoints, compute and secure resource operations.',
-    tags: ['RBAC', 'Networking', 'Governance']
-  },
-  defender: {
-    title: 'Microsoft Defender',
-    description: 'Endpoint health, attack-surface reduction, indicator workflows and security posture improvement.',
-    tags: ['Defender XDR', 'IOC', 'Hardening']
-  },
-  m365: {
-    title: 'Microsoft 365',
-    description: 'Exchange Online, Teams, SharePoint and productivity-platform administration.',
-    tags: ['Exchange', 'Teams', 'SharePoint']
-  },
-  automation: {
-    title: 'PowerShell Automation',
-    description: 'Reusable administration, reporting, detection, remediation and controlled operational change.',
-    tags: ['PowerShell', 'Automation', 'APIs']
-  }
+const details={
+ platform:{kicker:"Core platform",title:"Cloud Platform",text:"A governed Microsoft cloud foundation brings identity, networking, security, endpoint management and automation together.",items:["Clear operational ownership","Security and governance by design","Scalable service delivery"]},
+ identity:{kicker:"Identity layer",title:"Microsoft Entra ID",text:"Identity controls provide the foundation for secure access across users, devices, applications and cloud resources.",items:["Conditional Access","Least-privilege administration","Authentication and lifecycle controls"]},
+ endpoint:{kicker:"Device management",title:"Microsoft Intune",text:"Modern endpoint management helps keep devices configured, compliant and supportable wherever users work.",items:["Configuration and compliance","Application deployment","Proactive remediation"]},
+ security:{kicker:"Threat protection",title:"Microsoft Defender",text:"Connected security signals improve visibility across endpoints, identities, email, applications and cloud workloads.",items:["Endpoint protection","Incident visibility","Security posture improvement"]},
+ automation:{kicker:"Operational efficiency",title:"PowerShell Automation",text:"Reusable scripts and controlled workflows reduce repetitive effort and improve consistency across administrative tasks.",items:["Repeatable operations","Audit-friendly execution","Sanitised public examples"]},
+ network:{kicker:"Cloud connectivity",title:"Azure Networking",text:"Secure connectivity, name resolution and traffic control are essential parts of a reliable cloud platform.",items:["Hub-and-spoke design","Private connectivity","DNS and routing"]},
 };
-
-document.querySelectorAll('.arch-node').forEach(node => {
-  node.addEventListener('click', () => {
-    document.querySelectorAll('.arch-node').forEach(item => item.classList.remove('selected'));
-    node.classList.add('selected');
-
-    const data = architectureData[node.dataset.arch];
-    document.getElementById('arch-title').textContent = data.title;
-    document.getElementById('arch-description').textContent = data.description;
-    document.getElementById('arch-tags').innerHTML = data.tags.map(tag => `<span>${tag}</span>`).join('');
+const title=document.getElementById("detail-title");
+const text=document.getElementById("detail-text");
+const kicker=document.getElementById("detail-kicker");
+const list=document.getElementById("detail-list");
+document.querySelectorAll(".topology-node").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".topology-node").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    const d=details[btn.dataset.key];
+    kicker.textContent=d.kicker;title.textContent=d.title;text.textContent=d.text;
+    list.innerHTML=d.items.map(x=>`<li>${x}</li>`).join("");
   });
 });
 
-const terminalSteps = [
-  { command: 'Connect-AzAccount', lines: ['Connected to Microsoft Azure context.', 'Subscription context validated.'], className: 'output-success' },
-  { command: 'Test-CloudSecurityPosture', lines: ['Checking Defender health...', 'Checking Intune compliance...', 'Checking private endpoint DNS...'], className: 'output-muted' },
-  { command: 'Invoke-CloudAutomation -Mode Safe', lines: ['Generating operational report...', 'Applying documented remediation...', 'Validation completed successfully.'], className: 'output-success' },
-  { command: 'Get-RajCloudPortfolio', lines: ['23 sanitised scripts available.', 'Azure | Intune | Defender | AVD | M365 | PowerShell'], className: 'output-warning' }
-];
-
-const terminal = document.getElementById('terminal-output');
-const commandElement = terminal?.querySelector('.typed-command');
-
-async function typeText(element, text, speed = 34) {
-  element.textContent = '';
-  for (const character of text) {
-    element.textContent += character;
-    await new Promise(resolve => setTimeout(resolve, speed));
-  }
+const scene=document.getElementById("cloud-scene");
+if(scene && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+  scene.addEventListener("pointermove",e=>{
+    const r=scene.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5;
+    const y=(e.clientY-r.top)/r.height-.5;
+    scene.style.transform=`rotateY(${x*5}deg) rotateX(${-y*4}deg)`;
+  });
+  scene.addEventListener("pointerleave",()=>scene.style.transform="");
 }
 
-async function runTerminal() {
-  if (!terminal || !commandElement) return;
-
-  for (const step of terminalSteps) {
-    await typeText(commandElement, step.command);
-    await new Promise(resolve => setTimeout(resolve, 350));
-
-    step.lines.forEach(line => {
-      const output = document.createElement('div');
-      output.className = step.className;
-      output.textContent = line;
-      terminal.appendChild(output);
-    });
-
-    await new Promise(resolve => setTimeout(resolve, 650));
-
-    const next = document.createElement('div');
-    next.innerHTML = '<span class="prompt">PS C:\\Cloud&gt;</span> <span class="typed-command"></span><span class="terminal-cursor">▋</span>';
-    terminal.appendChild(next);
-    commandElement.classList.remove('typed-command');
-    window.currentCommandElement = next.querySelector('.typed-command');
-    commandElement.replaceWith(window.currentCommandElement);
-  }
-}
-
-const terminalObserver = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) {
-    runTerminal();
-    terminalObserver.disconnect();
-  }
-}, { threshold: 0.45 });
-
-if (terminal) terminalObserver.observe(terminal);
-
-document.querySelectorAll('.filter-button').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('.filter-button').forEach(item => item.classList.remove('active'));
-    button.classList.add('active');
-
-    const filter = button.dataset.filter;
-    document.querySelectorAll('.script-card').forEach(card => {
-      const category = card.dataset.category;
-      card.hidden = filter !== 'all' && category !== filter && category !== 'all';
-    });
+const sections=[...document.querySelectorAll("main section[id],header[id]")];
+const navLinks=[...document.querySelectorAll(".site-menu a")];
+const navObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")===`#${entry.target.id}`));
+    }
   });
-});
-
-const portalToggle = document.querySelector('.portal-toggle');
-const portalSection = document.getElementById('cloud-console');
-const portalClose = document.querySelector('.portal-close');
-
-portalToggle?.addEventListener('click', () => {
-  portalSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  portalToggle.setAttribute('aria-expanded', 'true');
-});
-
-portalClose?.addEventListener('click', () => {
-  document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' });
-  portalToggle?.setAttribute('aria-expanded', 'false');
-});
-
-document.querySelectorAll('.portal-nav').forEach(button => {
-  button.addEventListener('click', () => {
-    const target = button.dataset.panel;
-    document.querySelectorAll('.portal-nav').forEach(item => item.classList.remove('active'));
-    document.querySelectorAll('.portal-panel').forEach(panel => panel.classList.remove('active'));
-    button.classList.add('active');
-    document.querySelector(`[data-portal-panel="${target}"]`)?.classList.add('active');
-  });
-});
+},{rootMargin:"-45% 0px -45% 0px"});
+sections.forEach(s=>navObserver.observe(s));
+document.getElementById("year").textContent=new Date().getFullYear();

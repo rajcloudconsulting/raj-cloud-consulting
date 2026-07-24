@@ -1,10 +1,10 @@
 {
   "name": "Raj Cloud Consulting",
   "short_name": "Raj Cloud",
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#081426",
+  "background_color": "#031426",
+  "theme_color": "#031426",
   "icons": [
     {
       "src": "assets/img/favicon.svg",
