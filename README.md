@@ -27,3 +27,6 @@ Do not publish tenant IDs, subscription IDs, internal hostnames, IP addresses, e
 - Replaced orbiting cloud with a full-width technology command centre visual.
 - Added canvas network animation, cloud core, HUD panels and architecture nodes.
 - Contact address is hidden behind a professional contact label.
+
+## V4.1 cache fix
+CSS and JavaScript assets were renamed and versioned to prevent browsers and GitHub Pages from serving the previous cached design.
