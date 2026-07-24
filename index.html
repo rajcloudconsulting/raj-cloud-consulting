@@ -61,47 +61,55 @@
         </div>
       </div>
 
-      <div class="cloud-scene reveal" id="cloud-scene" aria-label="Animated cloud architecture illustration">
-        <div class="scene-floor"></div>
-        <div class="core-cloud">
-          <span class="cloud-puff p1"></span>
-          <span class="cloud-puff p2"></span>
-          <span class="cloud-puff p3"></span>
-          <span class="cloud-base"></span>
-          <strong>Cloud</strong>
+      <div class="tech-scene reveal" id="tech-scene" aria-label="Animated Microsoft cloud command centre">
+        <canvas id="tech-canvas" aria-hidden="true"></canvas>
+
+        <div class="tech-hud hud-status">
+          <span class="pulse-dot"></span>
+          <div><small>Cloud operations</small><strong>Systems connected</strong></div>
         </div>
 
-        <div class="orbit orbit-a">
-          <div class="scene-node node-azure"><span>A</span><small>Azure</small></div>
-        </div>
-        <div class="orbit orbit-b">
-          <div class="scene-node node-m365"><span>M</span><small>Microsoft 365</small></div>
-        </div>
-        <div class="orbit orbit-c">
-          <div class="scene-node node-sec"><span>◆</span><small>Security</small></div>
-        </div>
-        <div class="orbit orbit-d">
-          <div class="scene-node node-auto"><span>&lt;/&gt;</span><small>Automation</small></div>
+        <div class="tech-hud hud-security">
+          <span class="hud-icon">◇</span>
+          <div><small>Security posture</small><strong>Protected by design</strong></div>
         </div>
 
-        <svg class="connection-map" viewBox="0 0 640 520" role="img" aria-label="Cloud services connected to a central platform">
-          <defs>
-            <linearGradient id="lineGlow" x1="0" x2="1">
-              <stop offset="0" stop-color="#1591ff" stop-opacity=".15"/>
-              <stop offset=".5" stop-color="#67d7ff" stop-opacity=".95"/>
-              <stop offset="1" stop-color="#1591ff" stop-opacity=".15"/>
-            </linearGradient>
-          </defs>
-          <path d="M318 260 C190 180 145 155 90 122"/>
-          <path d="M320 260 C450 160 505 130 555 100"/>
-          <path d="M320 260 C448 345 520 390 575 420"/>
-          <path d="M320 260 C185 360 120 395 62 426"/>
-        </svg>
+        <div class="tech-hud hud-automation">
+          <span class="hud-icon">&lt;/&gt;</span>
+          <div><small>Automation layer</small><strong>Policy-driven</strong></div>
+        </div>
 
-        <div class="data-particle particle-1"></div>
-        <div class="data-particle particle-2"></div>
-        <div class="data-particle particle-3"></div>
-        <div class="data-particle particle-4"></div>
+        <div class="tech-core" aria-hidden="true">
+          <div class="core-ring core-ring-one"></div>
+          <div class="core-ring core-ring-two"></div>
+          <div class="core-ring core-ring-three"></div>
+          <div class="core-orb">
+            <span class="orb-cloud">
+              <i></i><i></i><i></i><b></b>
+            </span>
+            <strong>Microsoft<br>Cloud</strong>
+          </div>
+          <div class="core-scan"></div>
+        </div>
+
+        <div class="tech-node node-identity">
+          <span>01</span><b>Identity</b><small>Entra ID</small>
+        </div>
+        <div class="tech-node node-endpoint">
+          <span>02</span><b>Endpoints</b><small>Intune</small>
+        </div>
+        <div class="tech-node node-security">
+          <span>03</span><b>Security</b><small>Defender</small>
+        </div>
+        <div class="tech-node node-network">
+          <span>04</span><b>Network</b><small>Azure</small>
+        </div>
+
+        <div class="tech-caption">
+          <span>CONNECTED CLOUD ARCHITECTURE</span>
+          <b>Identity · Infrastructure · Security · Automation</b>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -287,7 +295,7 @@
       </div>
       <div class="contact-actions">
         <a class="button button-light" href="mailto:rajcloudconsulting@gmail.com?subject=Consulting%20enquiry">Email Raj Cloud Consulting</a>
-        <span>rajcloudconsulting@gmail.com</span>
+        <a class="contact-label" href="mailto:rajcloudconsulting@gmail.com">Contact Raj Cloud Consulting</a>
       </div>
     </div>
   </section>

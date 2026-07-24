@@ -1,4 +1,4 @@
-# Raj Cloud Consulting — Corporate 3D Edition
+# Raj Cloud Consulting — Tech Command Centre Edition
 
 Static, responsive GitHub Pages website for **RajCloudConsulting.com**.
 
@@ -22,3 +22,8 @@ Commit to `main`; GitHub Actions will redeploy the site.
 
 ## Privacy
 Do not publish tenant IDs, subscription IDs, internal hostnames, IP addresses, employer/client names, secrets, tokens or confidential certificates.
+
+## V4 update
+- Replaced orbiting cloud with a full-width technology command centre visual.
+- Added canvas network animation, cloud core, HUD panels and architecture nodes.
+- Contact address is hidden behind a professional contact label.
